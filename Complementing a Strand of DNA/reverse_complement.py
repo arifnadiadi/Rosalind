@@ -46,7 +46,6 @@ def reverse_complement(seq):
 
 
 def main():
-    print('**********************Reverse Complement Program**********************')
     # Prompt user here
     sequence = raw_input("Please enter an oligonucleotide sequence: ").upper()
 
@@ -54,8 +53,7 @@ def main():
     while (is_seq_valid(sequence)):
         print('Original sequence: ' + sequence)
         print('Reverse complement sequence: ' + reverse_complement(sequence))
-        sequence = raw_input("Please enter an oligonucleotide sequence: ").upper()
-    print('######################################################################')
+        sequence = raw_input("Enter a nucleotide sequence: ").upper()
 
 if __name__ == '__main__':
     main()
